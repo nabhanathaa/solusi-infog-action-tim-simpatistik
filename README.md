@@ -1,4 +1,4 @@
-# Kompas Peluang Kerja · "Nganggur Juga Punya Alamat"
+# LokaKerja · "Nganggur Juga Punya Alamat"
 # Tim SimpatiStik - Nabhan Athallah - Annisa Rizqiya Hanumm - Viranosa Ariana Hafsari
 Aplikasi web interaktif untuk **ACTION 2026 (HMP Sains Data UNESA)**, subtema *Turning Insight into Opportunity: Analisis Pengangguran Terbuka untuk Pemerataan Kesempatan Kerja*.
 Infografis A3 menjelaskan temuan; aplikasi ini **mengoperasionalkannya**: peta 514 kab/kota, klasifikasi zona otomatis, rekomendasi per peran, simulator investasi → kerja (Input-Output), radar peringatan dini, dan suara publik.

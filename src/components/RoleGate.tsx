@@ -24,7 +24,7 @@ export function RoleGate() {
     <div className="gate" role="dialog" aria-modal="true" aria-labelledby="gate-t">
       <div className="gate-in">
         <div className="gate-top">
-          <div className="eyebrow light">KOMPAS PELUANG KERJA · ACTION 2026</div>
+          <div className="eyebrow light">LOKAKERJA · ACTION 2026</div>
           {choice && <button className="x" aria-label="Tutup" onClick={() => setGate(false)}>×</button>}
         </div>
         <h1 id="gate-t">Nganggur juga <em>punya alamat.</em></h1>

@@ -1,9 +1,9 @@
 {
-  "name": "kompas-peluang-kerja",
+  "name": "lokakerja",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Kompas Peluang Kerja: aplikasi web interaktif analisis pengangguran terbuka kabupaten/kota (ACTION 2026)",
+  "description": "LokaKerja: aplikasi web interaktif analisis pengangguran terbuka kabupaten/kota (ACTION 2026)",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

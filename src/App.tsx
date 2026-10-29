@@ -25,7 +25,7 @@ export default function App() {
   const { route, go, gate, setGate, choice } = useApp();
   const [more, setMore] = useState(false);
   const main = useRef<HTMLElement>(null);
-  useEffect(() => { setMore(false); main.current?.focus({ preventScroll: true }); document.body.dataset.view = route.view; document.title = 'Kompas Peluang Kerja · ' + (NAV.find((n) => n.v === route.view)?.l ?? ''); }, [route.view]);
+  useEffect(() => { setMore(false); main.current?.focus({ preventScroll: true }); document.body.dataset.view = route.view; document.title = 'LokaKerja · ' + (NAV.find((n) => n.v === route.view)?.l ?? ''); }, [route.view]);
   // animasi muncul saat digulir: kelas hanya ditambahkan lewat JS, jadi tanpa JS konten tetap tampil
   useEffect(() => {
     if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
@@ -42,9 +42,9 @@ export default function App() {
     <>
       <a className="skip" href="#main" onClick={(e) => { e.preventDefault(); main.current?.focus(); }}>Lompat ke konten</a>
       <header className="top">
-        <button className="brand" onClick={() => go('beranda')} aria-label="Kompas Peluang Kerja, ke beranda">
-          <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden><rect width="32" height="32" rx="8" fill="#0a2f44" /><circle cx="16" cy="16" r="9.5" fill="none" stroke="#f0db7f" strokeWidth="1.8" /><path d="M16 8l3 8-3 8-3-8z" fill="#ca7122" /><circle cx="16" cy="16" r="1.6" fill="#fff" /></svg>
-          <span><b>Kompas Peluang Kerja</b><em>Nganggur juga punya alamat</em></span>
+        <button className="brand" onClick={() => go('beranda')} aria-label="LokaKerja, ke beranda">
+          <img className="brand-logo" src="./lokakerja-logo.png" alt="" />
+          <span><b>LokaKerja</b><em>Nganggur juga punya alamat</em></span>
         </button>
         <nav className="dtabs" aria-label="Navigasi utama">
           {NAV.map((n) => <button key={n.v} className={route.view === n.v ? 'on' : ''} aria-current={route.view === n.v ? 'page' : undefined} onClick={() => go(n.v, { w: route.q.get('w'), r: route.q.get('r') })}>{n.l}</button>)}
