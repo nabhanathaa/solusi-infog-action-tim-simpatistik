@@ -62,7 +62,7 @@ export default function App() {
         {route.view === 'radar' && <Radar />}
         {route.view === 'suara' && <Suara />}
         {route.view === 'metode' && <Metode />}
-        <footer className="foot">ACTION 2026 · Data: BPS (Sakernas, BRS, Tabel IO 2020), komentar publik YouTube (anonim). Hasil adalah potensi, bukan prediksi.</footer>
+        <footer className="foot">ACTION 2026 · Data: BPS (Sakernas, BRS, Tabel IO 2020), komentar publik YouTube (anonim). Hasil adalah potensi, bukan prediksi. · Dibuat oleh Tim Simpatistik.</footer>
       </main>
       <nav className="mtabs" aria-label="Navigasi utama (ponsel)">
         {mobilePrimary.map((n) => <button key={n.v} className={route.view === n.v ? 'on' : ''} aria-current={route.view === n.v ? 'page' : undefined} onClick={() => go(n.v, { w: route.q.get('w'), r: route.q.get('r') })}><Icon d={n.ic} /><span>{n.l}</span></button>)}
