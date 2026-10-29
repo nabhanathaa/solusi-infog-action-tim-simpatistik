@@ -1,0 +1,16 @@
+{
+  "name": "Kompas Peluang Kerja",
+  "short_name": "Kompas Kerja",
+  "description": "Nganggur juga punya alamat: peta, simulasi, dan rekomendasi untuk pemerataan kesempatan kerja.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E9EEF6",
+  "theme_color": "#0E1B3D",
+  "lang": "id",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}
